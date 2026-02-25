@@ -813,11 +813,6 @@ function Home({ query }) {
         <div className="mt-1 text-slate-600">
           Click a command to view detailed descriptions and annotated examples.
         </div>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Badge>Beginner-friendly</Badge>
-          <Badge>Printable content</Badge>
-          <Badge>Hash-routed</Badge>
-        </div>
       </header>
 
       {COMMANDS.map((sec) => (
