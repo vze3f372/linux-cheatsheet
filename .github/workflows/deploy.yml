@@ -11,7 +11,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -20,10 +20,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+      - name: Show Node/npm versions
+        run: |
+          node -v
+          npm -v
 
       - name: Install dependencies
         run: npm install
