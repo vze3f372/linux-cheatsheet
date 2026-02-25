@@ -396,7 +396,7 @@ const COMMANDS = [
         slug: "htop",
         brief: "Enhanced process monitor",
         description:
-          "A more user-friendly alternative to top (colored UI, easier sorting, kill from UI).",
+          "A more user-friendly alternative to top (colored UI, easier sorting, kill from UI). Note: Must be installed using \"sudo apt install htop\"",
         examples: [{ cmd: "htop", meaning: "Open enhanced process viewer" }],
       },
       {
