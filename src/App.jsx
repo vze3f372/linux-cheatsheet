@@ -657,7 +657,7 @@ function flattenCommands() {
 }
 
 function useHashRoute() {
-  const [hash, setHash] = useState(() => window.location.hash || "#/"");
+  const [hash, setHash] = useState(() => window.location.hash || "#/");
   useEffect(() => {
     const onHash = () => setHash(window.location.hash || "#/");
     window.addEventListener("hashchange", onHash);

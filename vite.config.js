@@ -1,7 +1,9 @@
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [react()],
-  base: "/linux-cheatsheet/",
+  plugins: [tailwindcss(), react()],
+  base: "/linux-cheatsheet/", // keep this if deploying to repo pages
 });
